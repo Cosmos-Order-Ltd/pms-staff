@@ -11,7 +11,11 @@
     "type-check": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug",
+    "playwright:install": "playwright install"
   },
   "keywords": [
     "pms",
@@ -61,7 +65,8 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "@testing-library/react": "^14.3.1",
-    "@testing-library/jest-dom": "^6.1.4"
+    "@testing-library/jest-dom": "^6.1.4",
+    "@playwright/test": "^1.48.2"
   },
   "engines": {
     "node": ">=20.0.0"
